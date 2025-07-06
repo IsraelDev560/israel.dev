@@ -42,7 +42,7 @@ export const About = () => {
         </div>
 
         <div className="grid overflow-auto scrollbar-hide lg:grid-cols-2 gap-12 items-center">
-          <div className="lg:max-h-[50vh] space-y-6">
+          <div className="lg:max-h-[50vh] text-center lg:text-left space-y-6">
             <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
               {t('about.p1')}
             </p>
