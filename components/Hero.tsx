@@ -21,7 +21,7 @@ export const Hero = () => {
         <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-gradient-to-br from-purple-400/20 to-blue-400/20 rounded-full blur-3xl animate-float" style={{ animationDelay: "3s" }}></div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+      <div className="max-w-7xl mx-auto px-4 mt-24 lg:mt-0 sm:px-6 lg:px-8 text-center relative z-10">
         <div className="animate-fade-in-up">
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 dark:text-white mb-6">
             {t('hero.greeting')}{" "}
