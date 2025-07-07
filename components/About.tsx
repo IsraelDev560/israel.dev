@@ -57,9 +57,6 @@ export const About = () => {
             <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
               {t('about.p4')}
             </p>
-            <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-              {t('about.p5')}
-            </p>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
