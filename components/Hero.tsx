@@ -30,15 +30,15 @@ export const Hero = () => {
             </span>
           </h1>
           
-          <p className="text-xl sm:text-2xl md:text-3xl text-gray-600 dark:text-gray-300 mb-8 font-light">
+          <p className="text-xl sm:text-2xl md:text-3xl text-gray-600 dark:text-gray-300 mb-6 font-light">
             {t('hero.title')}
           </p>
           
-          <p className="text-lg sm:text-xl text-gray-500 dark:text-gray-400 mb-12 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg sm:text-xl text-gray-500 dark:text-gray-400 mb-8 max-w-3xl mx-auto leading-relaxed">
             {t('hero.description')}
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-10">
             <Button 
               onClick={scrollToAbout}
               size="lg" 

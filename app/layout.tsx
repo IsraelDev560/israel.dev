@@ -18,8 +18,68 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Israel - Desenvolvedor Full Stack",
-  description: "Israel, desenvolvedor web full stack, especializado em tecnologias modernas",
+  metadataBase: new URL("https://israel-dev.vercel.app/"), // substitua com seu domínio real
+  title: {
+    default: "Israel - Desenvolvedor Full Stack",
+    template: "%s | Israel Dev",
+  },
+  description:
+    "Sou Israel, desenvolvedor web full stack especializado em aplicações modernas com React, Next.js, Node.js e AWS. Entrego soluções escaláveis e bem arquitetadas.",
+  keywords: [
+    "Israel",
+    "Desenvolvedor Full Stack",
+    "React",
+    "Next.js",
+    "Node.js",
+    "TypeScript",
+    "Java",
+    "AWS",
+    "Desenvolvedor Web",
+    "Frontend",
+    "Backend",
+  ],
+  authors: [{ name: "Israel", url: "https://israel-dev.vercel.app/" }],
+  creator: "Israel",
+  publisher: "iSCode",
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: false,
+    },
+  },
+  openGraph: {
+    title: "Israel - Desenvolvedor Full Stack",
+    description: "Portfólio de Israel, desenvolvedor full stack. Veja meus projetos com React, Next.js, Java, TypeScript e AWS.",
+    url: "https://israel-dev.vercel.app/",
+    siteName: "Israel Dev",
+    locale: "pt_BR",
+    type: "website",
+    images: [
+      {
+        url: "https://israel-dev.vercel.app/favicon.svg",
+        width: 1200,
+        height: 630,
+        alt: "Israel - Desenvolvedor Full Stack",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Israel - Desenvolvedor Full Stack",
+    description: "Portfólio de Israel, especialista em React, Next.js, Node.js, TypeScript e AWS.",
+    images: ["https://israel-dev.vercel.app/favicon.svg"],
+  },
+  icons: {
+    icon: "/favicon.svg",
+  },
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
+    { media: "(prefers-color-scheme: dark)", color: "#0a0a0a" },
+  ],
 };
 
 export default function RootLayout({

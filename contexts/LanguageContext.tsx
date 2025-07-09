@@ -47,7 +47,6 @@ const translations = {
     'skills.frontend': 'Frontend',
     'skills.backend': 'Backend',
     'skills.tools': 'Ferramentas & Outros',
-    'skills.learning': 'Sempre aprendendo e me atualizando com as últimas tendências do mercado',
     'skills.evolution': 'Em constante evolução 🚀',
 
     // Projects
@@ -116,7 +115,6 @@ const translations = {
     'skills.frontend': 'Frontend',
     'skills.backend': 'Backend',
     'skills.tools': 'Tools & Others',
-    'skills.learning': 'Always learning and staying updated with the latest market trends',
     'skills.evolution': 'Constantly evolving',
 
     // Projects

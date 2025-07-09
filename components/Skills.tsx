@@ -25,7 +25,7 @@ export const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="py-20 bg-gradient-to-br from-slate-50 to-blue-50 dark:from-gray-900 dark:to-gray-800">
+    <section id="skills" className="py-10 bg-gradient-to-br from-slate-50 to-blue-50 dark:from-gray-900 dark:to-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">
@@ -63,9 +63,6 @@ export const Skills = () => {
         </div>
 
         <div className="mt-16 text-center">
-          <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
-            {t('skills.learning')}
-          </p>
           <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full">
             <span className="text-sm font-medium">{t('skills.evolution')}</span>
           </div>
