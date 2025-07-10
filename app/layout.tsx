@@ -53,7 +53,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Israel - Desenvolvedor Full Stack",
-    description: "Israel, desenvolvedor full stack. Veja meus projetos com React, Next.js, Java, TypeScript e AWS.",
+    description: "Israel, desenvolvedor full stack. Veja meus projetos com React, Next.js, Java, SpringBoot, TypeScript e AWS.",
     url: "https://israel-dev.vercel.app/",
     siteName: "Israel Dev",
     locale: "pt_BR",
@@ -70,7 +70,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Israel - Desenvolvedor Full Stack",
-    description: "Portfólio de Israel, especialista em React, Next.js, Node.js, TypeScript e AWS.",
+    description: "Israel, especialista em React, Next.js, Java, SpringBoot, TypeScript e AWS.",
     images: ["https://israel-dev.vercel.app/israel-devCodeIcon.png"],
   },
   icons: {
