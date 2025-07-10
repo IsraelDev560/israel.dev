@@ -53,7 +53,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Israel - Desenvolvedor Full Stack",
-    description: "Portfólio de Israel, desenvolvedor full stack. Veja meus projetos com React, Next.js, Java, TypeScript e AWS.",
+    description: "Israel, desenvolvedor full stack. Veja meus projetos com React, Next.js, Java, TypeScript e AWS.",
     url: "https://israel-dev.vercel.app/",
     siteName: "Israel Dev",
     locale: "pt_BR",
