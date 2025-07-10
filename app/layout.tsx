@@ -60,7 +60,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://israel-dev.vercel.app/favicon.svg",
+        url: "https://israel-dev.vercel.app/israel-devCodeIcon.png",
         width: 1200,
         height: 630,
         alt: "Israel - Desenvolvedor Full Stack",
@@ -71,11 +71,11 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Israel - Desenvolvedor Full Stack",
     description: "Portfólio de Israel, especialista em React, Next.js, Node.js, TypeScript e AWS.",
-    images: ["https://israel-dev.vercel.app/favicon.svg"],
+    images: ["https://israel-dev.vercel.app/israel-devCodeIcon.png"],
   },
   icons: {
     icon: "/favicon.png", 
-    shortcut: "/favicon.ico", 
+    shortcut: "/israel-devCodeIcon.png", 
   },
   themeColor: [
     { media: "(prefers-color-scheme: light)", color: "#ffffff" },
