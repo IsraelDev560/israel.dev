@@ -74,8 +74,8 @@ export const metadata: Metadata = {
     images: ["https://israel-dev.vercel.app/israel-devCodeIcon.png"],
   },
   icons: {
-    icon: "/favicon.png", 
-    shortcut: "/israel-devCodeIcon.png", 
+    icon: "/favicon.ico", 
+    shortcut: "/favicon.ico", 
   },
   themeColor: [
     { media: "(prefers-color-scheme: light)", color: "#ffffff" },
