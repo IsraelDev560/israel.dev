@@ -9,18 +9,54 @@ export const Skills = () => {
   const skillCategories = [
     {
       title: t('skills.frontend'),
-      skills: ["React", "Next.js", "TypeScript", "JavaScript", "PHP", "HTML5", "CSS3", "Tailwind CSS", "Bootstrap"],
+      skills: [
+        "React", "Next.js", "React Native",
+        "TypeScript", "JavaScript", "PHP",
+        "HTML5", "CSS3", "Tailwind CSS", "Bootstrap"
+      ],
       color: "bg-blue-500"
     },
     {
       title: t('skills.backend'),
-      skills: ["Java", "SpringBoot", "Node.js", "Express", "Python", "MySQL", "PostgreSQL", "MongoDB", "REST APIs", "Docker"],
+      skills: [
+        "Java", "Spring Boot", "Node.js", "Express",
+        "Python", "MySQL", "PostgreSQL", "MongoDB",
+        "Redis", "REST APIs", "GraphQL",
+        "Docker", "Docker Compose"
+      ],
       color: "bg-red-500"
     },
     {
+      title: t('skills.automation'),
+      skills: [
+        "N8N", "APIs & Webhooks", "Evolution API",
+        "WhatsApp Bots", "Discord Bots",
+        "Integrations (ClickUp, CRMs, etc.)"
+      ],
+      color: "bg-green-500"
+    },
+    {
+      title: t('skills.devops'),
+      skills: [
+        "AWS", "Vercel", "Linux",
+        "CI/CD", "Cloud Deployment"
+      ],
+      color: "bg-yellow-500"
+    },
+    {
       title: t('skills.tools'),
-      skills: ["Git", "GitHub", "VS Code", "Figma", "Vercel", "AWS", "Linux", "Agile/Scrum"],
+      skills: [
+        "Git", "GitHub", "VS Code", "Figma",
+        "Agile/Scrum", "Leadership", "Mentorship"
+      ],
       color: "bg-purple-500"
+    },
+    {
+      title: t('skills.testing'),
+      skills: [
+        "Jest", "React Testing Library", "Unit & Integration Tests"
+      ],
+      color: "bg-pink-500"
     }
   ];
 

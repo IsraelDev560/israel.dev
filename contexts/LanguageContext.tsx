@@ -27,17 +27,17 @@ const translations = {
 
     // About
     'about.title': 'Sobre Mim',
-    'about.subtitle': 'Desenvolvedor apaixonado por tecnologia e inovação',
-    "about.p1": "No passado, tive a oportunidade de trabalhar como Web Designer na Potiguar Digital, onde desenvolvi projetos criativos para diferentes nichos de mercado. Também realizei freelas com Next.js e React.js, entregando soluções sob medida para diversos clientes. Essas experiências fortaleceram minha base técnica e aprimoraram minha capacidade de entregar valor com eficiência.",
-    "about.p2": "Ao longo da minha jornada, me qualifiquei por meio de formações importantes, como o curso superior em Análise e Desenvolvimento de Sistemas (ADS), além de Desenvolvedor Fullstack Júnior pela MaisPraTi, Programador Web pelo Senai e Backend em Java pela DIO.",
-    "about.p3": "Essas formações foram essenciais para aprofundar meu conhecimento em tecnologias atuais e me preparar para desafios reais do mercado. Busco aplicar essas habilidades em projetos que entreguem valor e resolvam problemas de forma prática e eficiente.",
-    "about.p4": "Especializo-me em criar aplicações web robustas e escaláveis, com foco na experiência do usuário e nas melhores práticas de desenvolvimento. Acredito que a tecnologia deve ser usada para simplificar processos e gerar impacto positivo.",
+    'about.subtitle': 'Desenvolvedor Full Stack apaixonado por tecnologia e inovação',
+    "about.p1": "Minha trajetória profissional começou na Potiguar Digital como Web Designer, criando conteúdos digitais e páginas de conversão para diferentes segmentos de mercado. Logo em seguida, tive minha primeira experiência profissional como desenvolvedor no projeto Vanilla App, atuando com React Native e TypeScript em um aplicativo de mensagens em tempo real.",
+    "about.p2": "Atualmente, atuo como Desenvolvedor e Líder Técnico no ClosedFun, uma plataforma de entretenimento digital, onde sou responsável pelo front-end e pela liderança de uma equipe de back-end. Paralelamente, fundei a iSCode, minha empresa de tecnologia, focada em soluções web sob medida e automações inteligentes (n8n, bots e integrações).",
+    "about.p3": "Ao longo da minha jornada, me qualifiquei por meio de formações sólidas, como o curso superior em Análise e Desenvolvimento de Sistemas (ADS), além de certificações como Desenvolvedor Fullstack Júnior pela MaisPraTi, Programador Web pelo Senai e Backend em Java pela DIO.",
+    "about.p4": "Hoje, especializo-me em construir aplicações robustas, escaláveis e orientadas à performance, sempre priorizando experiência do usuário, boas práticas e inovação. Acredito que a tecnologia deve ser usada para simplificar processos, gerar impacto positivo e transformar negócios.",
     'about.fullstack': 'Full Stack',
     'about.fullstack.desc': 'Domínio completo do desenvolvimento web, do front-end ao back-end',
     'about.innovation': 'Inovação',
     'about.innovation.desc': 'Sempre em busca das tecnologias mais modernas e eficientes',
     'about.collaboration': 'Colaboração',
-    'about.collaboration.desc': 'Experiência em trabalho em equipe e metodologias ágeis',
+    'about.collaboration.desc': 'Experiência em trabalho em equipe, liderança técnica e metodologias ágeis',
     'about.dedication': 'Dedicação',
     'about.dedication.desc': 'Comprometido em entregar soluções de alta qualidade',
 
@@ -48,6 +48,9 @@ const translations = {
     'skills.backend': 'Backend',
     'skills.tools': 'Ferramentas & Outros',
     'skills.evolution': 'Em constante evolução 🚀',
+    'skills.automation': 'Automação',
+    'skills.testing': 'Testes',
+    'skills.devops': 'DevOps',
 
     // Projects
     'projects.title': 'Meus Projetos',
@@ -95,17 +98,17 @@ const translations = {
 
     // About
     'about.title': 'About Me',
-    'about.subtitle': 'Developer passionate about technology and innovation',
-    "about.p1": "In the past, I had the opportunity to work as a Web Designer at Potiguar Digital, where I developed creative projects for various market segments. I also worked as a freelancer using Next.js and React.js, delivering custom solutions to different clients. These experiences strengthened my technical foundation and enhanced my ability to deliver value efficiently.",
-    "about.p2": "Throughout my journey, I earned key qualifications, including a degree in Systems Analysis and Development (ADS), as well as certifications as a Junior Fullstack Developer from MaisPraTi, Web Programmer from Senai, and Java Backend Developer from DIO.",
-    "about.p3": "These courses were essential in deepening my knowledge of modern technologies and preparing me for real-world challenges. I strive to apply these skills in projects that deliver value and solve problems effectively.",
-    "about.p4": "I specialize in building robust and scalable web applications, always focusing on user experience and best development practices. I believe technology should simplify processes and generate positive impact.",
+    'about.subtitle': 'Full Stack Developer passionate about technology and innovation',
+    "about.p1": "My professional journey started at Potiguar Digital as a Web Designer, creating digital content and high-conversion landing pages for different market segments. Shortly after, I gained my first development experience with the Vanilla App project, working with React Native and TypeScript to build a real-time messaging application.",
+    "about.p2": "Currently, I work as a Developer and Tech Lead at ClosedFun, a digital entertainment platform, where I am responsible for the front-end and lead a back-end development team. In parallel, I founded iSCode, my own tech company, focused on custom web solutions and intelligent automations (n8n, bots, and integrations).",
+    "about.p3": "Throughout my journey, I earned solid qualifications, including a degree in Systems Analysis and Development (ADS), along with certifications as a Junior Fullstack Developer from MaisPraTi, Web Programmer from Senai, and Java Backend Developer from DIO.",
+    "about.p4": "Today, I specialize in building robust, scalable, and performance-oriented applications, always prioritizing user experience, best practices, and innovation. I believe technology should simplify processes, generate positive impact, and transform businesses.",
     'about.fullstack': 'Full Stack',
     'about.fullstack.desc': 'Complete web development expertise, from front-end to back-end',
     'about.innovation': 'Innovation',
     'about.innovation.desc': 'Always seeking the most modern and efficient technologies',
     'about.collaboration': 'Collaboration',
-    'about.collaboration.desc': 'Experience in teamwork and agile methodologies',
+    'about.collaboration.desc': 'Experience in teamwork, technical leadership, and agile methodologies',
     'about.dedication': 'Dedication',
     'about.dedication.desc': 'Committed to delivering high-quality solutions',
 
@@ -116,6 +119,9 @@ const translations = {
     'skills.backend': 'Backend',
     'skills.tools': 'Tools & Others',
     'skills.evolution': 'Constantly evolving',
+    'skills.automation': 'Automation',
+    'skills.testing': 'Testing',
+    'skills.devops': 'DevOps',
 
     // Projects
     'projects.title': 'My Projects',

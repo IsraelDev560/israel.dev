@@ -25,7 +25,6 @@ export const projects = [
         technologies: ["React Native", "TypeScript", "HTML", "CSS"],
         demoLink: "",
         githubLink: "",
-
     },
     {
         image: "/ortolab/ortolab.png",
@@ -36,4 +35,12 @@ export const projects = [
         demoLink: "https://ortolab.netlify.app",
         githubLink: "https://github.com/IsraelDev560/ortolab-definitive",
     },
+    {
+        image: '/rs/image.png',
+        title: 'Transforme seu corpo e sua saúde',
+        available: true,
+        technologies: ["React", "JavaScript", 'Typescript', "HTML", "CSS", 'TailwindCSS'],
+        demoLink: "https://train-transform-now.vercel.app/",
+        githubLink: "",
+    }
 ];
