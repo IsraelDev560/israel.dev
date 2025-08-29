@@ -8,7 +8,23 @@ import { useState } from "react";
 
 const MAX_DESCRIPTION_LENGTH = 150;
 
-export const ProjectCard = ({ project, openLightbox, index }) => {
+interface Project {
+  image: string;
+  title: string;
+  available: boolean;
+  description: string;
+  technologies: string[];
+  demoLink: string;
+  githubLink: string;
+}
+
+interface ProjectCardProps {
+  project: Project;
+  openLightbox: (index: number) => void;
+  index: number;
+}
+
+export const ProjectCard = ({ project, openLightbox, index }: ProjectCardProps) => {
   const { t } = useLanguage();
   const [isExpanded, setIsExpanded] = useState(false);
 
