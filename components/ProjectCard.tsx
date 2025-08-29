@@ -12,7 +12,8 @@ export const ProjectCard = ({ project, openLightbox, index }) => {
   const { t } = useLanguage();
   const [isExpanded, setIsExpanded] = useState(false);
 
-  const isLongDescription = project.description.length > MAX_DESCRIPTION_LENGTH;
+  const description = t(project.description);
+  const isLongDescription = description.length > MAX_DESCRIPTION_LENGTH;
 
   return (
     <Card className="overflow-hidden hover:shadow-lg transition-shadow duration-300 border-0 shadow-md dark:bg-gray-800 flex flex-col">
@@ -33,7 +34,7 @@ export const ProjectCard = ({ project, openLightbox, index }) => {
         <div className="flex-grow">
           <div className={`relative ${isExpanded ? '' : 'max-h-24 overflow-y-auto'} scrollbar-hide`}>
               <p className="text-gray-600 dark:text-gray-300 mb-4 text-sm leading-relaxed">
-                  {project.description}
+                  {description}
               </p>
               {!isExpanded && isLongDescription && (
                   <div className="absolute bottom-0 left-0 right-0 h-12 bg-gradient-to-t from-gray-800 to-transparent"></div>
