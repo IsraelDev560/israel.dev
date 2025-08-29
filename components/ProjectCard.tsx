@@ -62,17 +62,19 @@ export const ProjectCard = ({ project, openLightbox, index }: ProjectCardProps) 
             </Button>
           )}
 
-          <div className="flex flex-wrap gap-2 mb-6">
+          <ul className="flex flex-wrap gap-2 mb-6">
             {project.technologies.map((tech, techIndex) => (
-              <Badge
-                key={techIndex}
-                variant="outline"
-                className="text-xs dark:border-gray-600 dark:text-gray-300"
-              >
-                {tech}
-              </Badge>
+              <li key={techIndex}>
+                <Badge
+                  tabIndex={0}
+                  variant="outline"
+                  className="text-xs dark:border-gray-600 dark:text-gray-300"
+                >
+                  {tech}
+                </Badge>
+              </li>
             ))}
-          </div>
+          </ul>
         </div>
 
         <div className="flex gap-3 mt-auto">
