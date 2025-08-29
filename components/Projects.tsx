@@ -1,13 +1,24 @@
 'use client'
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { projects } from "./mocks/projects";
+import { useState } from "react";
+import Lightbox from "yet-another-react-lightbox";
+import "yet-another-react-lightbox/styles.css";
+import { ProjectCard } from "./ProjectCard";
 
 export const Projects = () => {
   const { t } = useLanguage();
+  const [open, setOpen] = useState(false);
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const projectImages = projects.map((p) => ({ src: p.image }));
+
+  const openLightbox = (index: number) => {
+    setCurrentIndex(index);
+    setOpen(true);
+  };
 
   return (
     <section id="projects" className="py-10 bg-white dark:bg-gray-900">
@@ -23,80 +34,7 @@ export const Projects = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {projects.map((project, index) => (
-            <Card key={index} className="overflow-hidden hover:shadow-lg transition-shadow duration-300 border-0 shadow-md dark:bg-gray-800">
-              <div className="aspect-video bg-gradient-to-br from-blue-100 to-purple-100 dark:from-blue-900/20 dark:to-purple-900/20 relative overflow-hidden">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <CardHeader>
-                <CardTitle className="text-xl dark:text-white">{project.title}</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-600 dark:text-gray-300 mb-4 text-sm leading-relaxed">
-                  {project.description}
-                </p>
-
-                <div className="flex flex-wrap gap-2 mb-6">
-                  {project.technologies.map((tech, techIndex) => (
-                    <Badge
-                      key={techIndex}
-                      variant="outline"
-                      className="text-xs dark:border-gray-600 dark:text-gray-300"
-                    >
-                      {tech}
-                    </Badge>
-                  ))}
-                </div>
-
-                <div className="flex gap-3">
-                  {/** Botão DEMO */}
-                  <Button
-                    variant="outline"
-                    size="sm"
-                    disabled={!project.available || !project.demoLink}
-                    className={`
-                        flex-1 
-                        ${project.available && project.demoLink
-                        ? "dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-700"
-                        : "bg-red-500 cursor-not-allowed opacity-60 dark:border-gray-600"}
-                              `}
-                    onClick={() => {
-                      if (project.available && project.demoLink) {
-                        window.open(project.demoLink, "_blank");
-                      }
-                    }}
-                  >
-                    <ExternalLink className="h-4 w-4 mr-2" />
-                    {t('projects.demo')}
-                  </Button>
-
-                  {/** Botão CÓDIGO */}
-                  <Button
-                    variant="outline"
-                    size="sm"
-                    disabled={!project.available || !project.githubLink}
-                    className={`
-                        flex-1 
-                        ${project.available && project.githubLink
-                        ? "dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-700"
-                        : "bg-red-500 cursor-not-allowed opacity-60 dark:border-gray-600"}
-                              `}
-                    onClick={() => {
-                      if (project.available && project.githubLink) {
-                        window.open(project.githubLink, "_blank");
-                      }
-                    }}
-                  >
-                    <Github className="h-4 w-4 mr-2" />
-                    {t('projects.code')}
-                  </Button>
-
-                </div>
-              </CardContent>
-            </Card>
+            <ProjectCard key={index} project={project} openLightbox={openLightbox} index={index} />
           ))}
         </div>
 
@@ -112,6 +50,12 @@ export const Projects = () => {
           </Button>
         </div>
       </div>
+      <Lightbox
+        open={open}
+        close={() => setOpen(false)}
+        slides={projectImages}
+        index={currentIndex}
+      />
     </section>
   );
 };
