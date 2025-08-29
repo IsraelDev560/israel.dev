@@ -64,6 +64,8 @@ const translations = {
     'projects.demo': 'Demo',
     'projects.code': 'Código',
     'projects.more': 'Ver mais projetos',
+    'projects.readMore': 'Ler mais',
+    'projects.readLess': 'Ler menos',
 
     // Contact
     'contact.title': 'Vamos Conversar?',
@@ -135,6 +137,8 @@ const translations = {
     'projects.demo': 'Demo',
     'projects.code': 'Code',
     'projects.more': 'See more projects',
+    'projects.readMore': 'Read more',
+    'projects.readLess': 'Read less',
 
     // Contact
     'contact.title': 'Let\'s Talk?',
